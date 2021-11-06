@@ -34,29 +34,29 @@ namespace T3_2021_2.Controllers
         {
             NotaIn.CrearNota(titulo,contenido);
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Nota");
         }
         [HttpGet]
 
         public IActionResult Editar(int id)
         {
-            ViewBag.NotaComoTal = NotaIn.EditarNota(id);
-            return View();
+            var nota = NotaIn.EditarNota(id);
+            return View(nota);
         }
 
-        [HttpPost]
+        [HttpPost] 
 
         public IActionResult Editar(string titulo, string contenido, int idNo)
         {
             NotaIn.EditarNota(titulo, contenido, idNo);
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Nota");
         }
         public IActionResult Borrar(int id)
         {
             NotaIn.BorrarNota(id);
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Nota");
         }
     }
 }

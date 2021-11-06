@@ -1,15 +1,26 @@
-﻿@{
-    ViewData["Title"] = "Index";
-}
-
-
-
-@model List<T3_2021_2.Models.Nota>
+﻿@model List<T3_2021_2.Models.Nota>
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Mi Biblioteca</h2>
+<h1>Index</h1>
 
+<br/>
+<a href="/Nota/Crear" class="btn btn-primary">Agregar Nota</a>
+<br />
 
+<br/>
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <div  class="container" style="border-style:solid">
+            <h3>Titulo: </h3>@item.nombre
+            <br />
+            <h3>Contenido: </h3>@item.descripcion
+            <br />
+            <a href="/Nota/Editar?id=@item.Id" class="btn btn-primary">Editar</a>
+            <a href="/Nota/Borrar?id=@item.Id" class="btn btn-primary">Eliminar</a>
+        </div>
+    }
+</div>
 

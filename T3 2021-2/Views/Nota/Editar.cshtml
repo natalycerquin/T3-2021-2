@@ -1,31 +1,35 @@
 ﻿<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
 <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
+
+@model T3_2021_2.Models.Nota
 @{
-    ViewData["Title"] = "Edit";
+    ViewBag.Title = "Editar";
 }
 
-<h1>Edit</h1>
+<h1>Editar</h1>
 
-<form method="post" action="/Nota/Edit">
-    <input hidden name="idNo" value="@ViewBag.NotaComoTal.idNota" />
-    <h1>Editar @ViewBag.NotaComoTal.tituloNota</h1>
+<form method="post" action="/Nota/Editar">
+
+    <input hidden name="idNo" value="@Model.Id"/>
+    <h1>Editar @Model.nombre </h1>
 
     <h3>Titulo: </h3>
-    <br />
-    <input name="titulo" type="text" value="@ViewBag.NotaComoTal.tituloNota" />
-    <br />
-    <br />
+    <br/>
+    <input name="titulo" type="text" value="@Model.nombre"/>
+    <br/>
+    <br/>
     <h3>Contenido: </h3>
-    <br />
+    <br/>
     <textarea class="form-control" id="contedPlug" name="contenido">
- @ViewBag.NotaComoTal.contenidoNota
+ @Model.descripcion 
 </textarea>
 
 
 
-    <br />
-    <br />
-    <button type="submit">Guardar</button>
+    <br/>
+    <br/>
+    <button type="submit" class="btn btn-primary">Guardar</button>
 </form>
 
 
