@@ -56,7 +56,7 @@
         </CounterConfig>
         <hashTree/>
         <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="ELIMINAR ID" enabled="true">
-          <stringProp name="CounterConfig.start">29</stringProp>
+          <stringProp name="CounterConfig.start">42</stringProp>
           <stringProp name="CounterConfig.end"></stringProp>
           <stringProp name="CounterConfig.incr">1</stringProp>
           <stringProp name="CounterConfig.name">ELIMINAR</stringProp>
@@ -1368,7 +1368,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Controlador Simple - Eliminar Nota" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Controlador Simple - Eliminar Nota" enabled="true"/>
         <hashTree>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Ver Árbol de Resultados" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
@@ -1972,7 +1972,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Controlador Simple - EDITAR NOTA" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Controlador Simple - EDITAR NOTA" enabled="false"/>
         <hashTree>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Ver Árbol de Resultados" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
