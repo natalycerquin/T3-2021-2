@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using T3_2021_2.Models;
 
 namespace T3_2021_2
 {
@@ -24,6 +26,11 @@ namespace T3_2021_2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+
+            services.AddDbContext<AppNotaContext>(
+                options => options.UseSqlServer(Configuration.GetConnectionString("DevConnection"))
+            );
 
         }
 
@@ -51,7 +58,7 @@ namespace T3_2021_2
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Nota}/{action=Index}/{id?}");
             });
         }
     }

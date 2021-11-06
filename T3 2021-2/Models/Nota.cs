@@ -9,6 +9,7 @@ namespace T3_2021_2.Models
     {
         public int Id { get; set; }
         public string nombre { get; set; }
+        public DateTime fechaModicacion { get; set; }
         public string descripcion { get; set; }
 
     }
