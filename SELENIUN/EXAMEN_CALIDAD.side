@@ -146,12 +146,12 @@
       "id": "a2b7f77a-4f60-42e4-9560-06221a15e5f6",
       "comment": "",
       "command": "assertText",
-      "target": "css=.container:nth-child(11)",
+      "target": "css=h1",
       "targets": [
         ["css=.container:nth-child(11)", "css:finder"],
         ["xpath=//div[6]", "xpath:position"]
       ],
-      "value": "Titulo:\\nPrueba 4\\nContenido:\\nTexto de prueba 4\\nEditar Eliminar"
+      "value": "Index"
     }, {
       "id": "44346973-9830-47d7-bc6f-816998a07b34",
       "comment": "",

@@ -10,8 +10,7 @@ using T3_2021_2.Models;
 
 namespace PruebasUnitarias.NotaControllerTest
 {
-  
-
+    
    public class TestMetodos
     {
         private Mock<NotaIn> _mockNot;
