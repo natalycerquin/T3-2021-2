@@ -2,18 +2,14 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
 
 
-<div class="container" style="border-style:solid">
-    @foreach (var item in ViewBag.Notas)
-    {
-        <h3>Titulo: </h3>@item.tituloNota
-        <br />
-        <h3>Contenido: </h3>@item.contenidoNota
-        <br />
-        <h3>Fecha de modificacion: </h3> @item.fechaModicacion.ToShortDateString()
-        <br />
-        <br /><br />
-    }
-</div>
+@model List<T3_2021_2.Models.Nota>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Mi Biblioteca</h2>
+
+
+

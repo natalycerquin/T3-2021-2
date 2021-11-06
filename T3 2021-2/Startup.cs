@@ -9,7 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using T3_2021_2.Interface;
 using T3_2021_2.Models;
+using T3_2021_2.servicio;
 
 namespace T3_2021_2
 {
@@ -31,6 +33,7 @@ namespace T3_2021_2
             services.AddDbContext<AppNotaContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("DevConnection"))
             );
+            services.AddTransient<NotaIn, NotaServicio>();
 
         }
 
