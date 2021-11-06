@@ -2,7 +2,7 @@
   "id": "c521a0dc-85ba-414f-ae36-c9a6c3049396",
   "version": "2.0",
   "name": "EXAMEN_CALIDAD",
-  "url": "https://localhost:44381/Nota/Crear",
+  "url": "https://localhost:44381",
   "tests": [{
     "id": "5a79ab35-ed69-420a-9df4-6bfaf029ee2e",
     "name": "CARGAR_NOTAS",
@@ -46,33 +46,28 @@
     "id": "95b7a60e-bf2d-4033-8541-8a2f5ed027ef",
     "name": "AGREGAR_NOTA",
     "commands": [{
-      "id": "d966ef1a-64af-4d37-8a8b-5ea81dc09657",
+      "id": "428ea44d-3472-4583-9cf2-71d02093ef0b",
       "comment": "",
       "command": "open",
-      "target": "https://localhost:44381/Nota/Crear",
+      "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "8e0a5bc2-0289-4958-bcc2-194c97ce423a",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1382x744",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "7df9eec3-d10d-45be-b32c-afb88f51e2c0",
+      "id": "06f1a098-9cd7-4ce8-8488-fbf63a5f1938",
       "comment": "",
       "command": "click",
-      "target": "name=titulo",
+      "target": "linkText=Agregar Nota",
       "targets": [
-        ["name=titulo", "name"],
-        ["css=input", "css:finder"],
-        ["xpath=//input[@name='titulo']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
+        ["linkText=Agregar Nota", "linkText"],
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar Nota')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Nota/Crear')]", "xpath:href"],
+        ["xpath=//main/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar Nota')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "ae6fe780-d8d2-4d26-a8d7-95ec14ae3be2",
+      "id": "e8974442-ebdb-4b02-8c17-ce62be7fcff6",
       "comment": "",
       "command": "type",
       "target": "name=titulo",
@@ -82,61 +77,40 @@
         ["xpath=//input[@name='titulo']", "xpath:attributes"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "prueba 2"
+      "value": "Prueba 4"
     }, {
-      "id": "e5aa3c80-ee28-4019-ac2d-f0eb6ee1a4aa",
+      "id": "06cb3e55-b509-4915-9e2b-1082f78923e3",
       "comment": "",
       "command": "click",
-      "target": "css=.CodeMirror-lines",
+      "target": "css=.CodeMirror-scroll",
       "targets": [
-        ["css=.CodeMirror-lines", "css:finder"],
-        ["xpath=//div[6]/div/div/div", "xpath:position"]
+        ["css=.CodeMirror-scroll", "css:finder"],
+        ["xpath=//div[6]", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "74374085-e91c-457b-8993-c5bfd15656f2",
+      "id": "84e431b0-3ef3-4a02-bdf5-ba4b7439c7c4",
       "comment": "",
       "command": "runScript",
       "target": "window.scrollTo(0,0)",
       "targets": [],
       "value": ""
     }, {
-      "id": "9215ee21-e5df-4d44-8905-7ea2fab7c0fa",
+      "id": "a7cbb75c-a14d-472c-bde7-ec0a4ac40f42",
       "comment": "",
       "command": "runScript",
       "target": "window.scrollTo(0,0)",
       "targets": [],
       "value": ""
     }, {
-      "id": "2eea11da-e94d-4918-83a4-9d43e10dc6fe",
+      "id": "40c803b7-36c5-451e-b1c9-1b0438cbe662",
       "comment": "",
       "command": "runScript",
       "target": "window.scrollTo(0,0)",
       "targets": [],
       "value": ""
     }, {
-      "id": "1f9862b2-adb9-4b26-b363-a6e3bbd9b121",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,0)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "453e6248-6583-48b7-ae1a-ba1006104883",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,0)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "ca20014f-1379-4ee4-87df-62f39db5846d",
-      "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,0)",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "b92fb21d-063c-4211-a49b-1ffe262bd924",
+      "id": "153bd877-99fe-4f6d-996c-c6c80a988f01",
       "comment": "",
       "command": "type",
       "target": "css=textarea:nth-child(1)",
@@ -144,9 +118,9 @@
         ["css=textarea:nth-child(1)", "css:finder"],
         ["xpath=//div/textarea", "xpath:position"]
       ],
-      "value": "aqui texto de prueba"
+      "value": "Texto de prueba 4"
     }, {
-      "id": "007eb703-a68a-46ce-9785-e2de64f6dd73",
+      "id": "ee543870-c03b-483c-8ff5-6beebfa49a6b",
       "comment": "",
       "command": "click",
       "target": "css=.btn",
@@ -158,7 +132,7 @@
       ],
       "value": ""
     }, {
-      "id": "f8419f03-173c-4b6b-8960-07406fbc2655",
+      "id": "000ecee0-3d41-43d8-ac45-b67a8967321c",
       "comment": "",
       "command": "click",
       "target": "css=h1",
@@ -169,7 +143,166 @@
       ],
       "value": ""
     }, {
-      "id": "9a1abd33-36d4-4c9b-9c77-ec9ba4920665",
+      "id": "a2b7f77a-4f60-42e4-9560-06221a15e5f6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.container:nth-child(11)",
+      "targets": [
+        ["css=.container:nth-child(11)", "css:finder"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": "Titulo:\\nPrueba 4\\nContenido:\\nTexto de prueba 4\\nEditar Eliminar"
+    }, {
+      "id": "44346973-9830-47d7-bc6f-816998a07b34",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e27d58d9-d7f1-422f-8155-ff911a090afe",
+    "name": "EDITAR_NOTA",
+    "commands": [{
+      "id": "3a6cb642-0da8-4752-8665-a9ae4f729d69",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6d4e2ef-81e5-48ec-83ea-ce4f49113fea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Editar",
+      "targets": [
+        ["linkText=Editar", "linkText"],
+        ["css=.container:nth-child(1) > .btn:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Editar')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Nota/Editar?id=1')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Editar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c10121b-9502-48d2-bbfc-e6b2c7bd3050",
+      "comment": "",
+      "command": "click",
+      "target": "name=titulo",
+      "targets": [
+        ["name=titulo", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='titulo']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5118ba8-3264-4be3-808c-5cbb6618890c",
+      "comment": "",
+      "command": "type",
+      "target": "name=titulo",
+      "targets": [
+        ["name=titulo", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='titulo']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Examen el dia viernes a las 10"
+    }, {
+      "id": "f9a51fba-2629-4457-928d-0a25bdc94744",
+      "comment": "",
+      "command": "click",
+      "target": "css=.CodeMirror-line:nth-child(2)",
+      "targets": [
+        ["css=.CodeMirror-line:nth-child(2)", "css:finder"],
+        ["xpath=//pre[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21016125-9200-4b25-89e6-ec130b5337f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.CodeMirror-line:nth-child(1)",
+      "targets": [
+        ["css=.CodeMirror-line:nth-child(1)", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'  Microsoft Visual Studio es un entorno de desarrollo integrado (IDE, por sus siglas en inglés) para Windows y macOS. Es compatible con múltiples lenguajes de programación, tales como C++, C#, Visual Basic .NET, F#, Java, Python, Ruby y PHP, al igual que entornos de desarrollo web, como ASP.NET MVC, Django, etc., a lo cual hay que sumarle las nuevas capacidades en línea bajo Windows Azure en forma del editor Monaco. ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e97279a-58f4-4746-805d-330939a7a322",
+      "comment": "",
+      "command": "type",
+      "target": "css=textarea:nth-child(1)",
+      "targets": [
+        ["css=textarea:nth-child(1)", "css:finder"],
+        ["xpath=//div/textarea", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "2451ba2a-291d-4715-b37c-ae66ab422d42",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "438acde7-4088-4b07-8d1a-40b50e02456d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container > .container:nth-child(1)",
+      "targets": [
+        ["css=.container > .container:nth-child(1)", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3ae0bac-f45e-4d34-a72b-fe8faa83b952",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=.container > .container:nth-child(1)", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": "Index"
+    }, {
+      "id": "72dd8adb-3536-45ce-852e-f691f12c68a0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cf930ed1-68c9-4f82-bdd2-63cd393a8920",
+    "name": "ELIMINAR_NOTA",
+    "commands": [{
+      "id": "4d31736d-ac3d-4444-bbf7-27b159e66357",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36164526-ad9d-4141-aa0a-b0ad6375708b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container:nth-child(3) > .btn:nth-child(6)",
+      "targets": [
+        ["css=.container:nth-child(3) > .btn:nth-child(6)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Eliminar')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Nota/Borrar?id=3')]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "997c2578-f3a0-4467-8af6-d7e129a5ff6e",
       "comment": "",
       "command": "assertText",
       "target": "css=h1",
@@ -180,7 +313,7 @@
       ],
       "value": "Index"
     }, {
-      "id": "69c63de3-5d4f-4378-a7c5-86f13bda22ff",
+      "id": "c506b83a-d022-44ef-bb8a-83c95e398e37",
       "comment": "",
       "command": "click",
       "target": "css=.pb-3",
@@ -190,7 +323,7 @@
       ],
       "value": ""
     }, {
-      "id": "3f9ddbbd-533a-4823-91b3-5d2b76e15d11",
+      "id": "5713cf6a-bfc9-496f-8491-b937ffe8409e",
       "comment": "",
       "command": "close",
       "target": "",
@@ -199,20 +332,13 @@
     }]
   }],
   "suites": [{
-    "id": "8d9296f7-8270-442d-83ab-70e2b568fb29",
-    "name": "Default Suite",
-    "persistSession": false,
-    "parallel": false,
-    "timeout": 300,
-    "tests": []
-  }, {
     "id": "be929517-3eb6-4e17-9888-f85e5e169084",
     "name": "NOTAS_APP",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["5a79ab35-ed69-420a-9df4-6bfaf029ee2e", "95b7a60e-bf2d-4033-8541-8a2f5ed027ef"]
+    "tests": ["5a79ab35-ed69-420a-9df4-6bfaf029ee2e", "95b7a60e-bf2d-4033-8541-8a2f5ed027ef", "e27d58d9-d7f1-422f-8155-ff911a090afe", "cf930ed1-68c9-4f82-bdd2-63cd393a8920"]
   }],
-  "urls": ["https://localhost:44381/"],
+  "urls": ["https://localhost:44381/", "https://localhost:44381/Nota/Crear"],
   "plugins": []
 }
