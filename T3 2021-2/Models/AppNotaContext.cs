@@ -9,7 +9,7 @@ namespace T3_2021_2.Models
 {
     public class AppNotaContext : DbContext
     {
-        public DbSet<Nota> Notas { get; set; }
+        public virtual DbSet<Nota> Notas { get; set; }
 
         public AppNotaContext(DbContextOptions<AppNotaContext> options)
             : base(options) { }

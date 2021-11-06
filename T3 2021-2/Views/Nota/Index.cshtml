@@ -3,6 +3,8 @@
     ViewBag.Title = "Index";
 }
 
+
+
 <h1>Index</h1>
 
 <br/>
@@ -13,14 +15,18 @@
 <div class="container">
     @foreach (var item in Model)
     {
-        <div  class="container" style="border-style:solid">
+        <div class="container" style="border-style: solid">
+            
             <h3>Titulo: </h3>@item.nombre
-            <br />
+            <br/>
             <h3>Contenido: </h3>@item.descripcion
-            <br />
+            <br/>
             <a href="/Nota/Editar?id=@item.Id" class="btn btn-primary">Editar</a>
             <a href="/Nota/Borrar?id=@item.Id" class="btn btn-primary">Eliminar</a>
+            <br/>
         </div>
+        <br/>
     }
+    <br/>
 </div>
 
